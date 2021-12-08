@@ -26,5 +26,5 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/the-gophers/go-action:${{ env.RELEASE_VERSION }}
-            ghcr.io/the-gophers/go-action:latest
+            ghcr.io/${{ github.repository_owner }}/go-action:${{ env.RELEASE_VERSION }}
+            ghcr.io/${{ github.repository_owner }}/go-action:latest
