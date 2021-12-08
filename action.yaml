@@ -23,10 +23,10 @@ outputs:
   sentMessage:
     description: 'message sent to Twitter'
 runs:
-  using: docker
-  image: Dockerfile
 #  using: docker
-#  image: docker://ghcr.io/the-gophers/go-action:1.0.0
+#  image: Dockerfile
+  using: docker
+  image: docker://ghcr.io/rcliao/go-action:latest
   args:
     - --message
     - "${{ inputs.message }}"
